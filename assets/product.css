@@ -18,7 +18,26 @@
   padding: 50px 0;
 }
 
+.singel-product-wrapper {
+  margin-bottom: 44px;
+}
 .singel-product-wrapper h4 {
+  margin-top: 10px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
+}
+
+#AddToCart {
+  margin-top: 10px;
+  background: #ffc107;
+}
+#AddToCart #AddToCartText {
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+  background: #ffc107;
+}
+
+.product-price {
+  margin-top: 10px;
 }

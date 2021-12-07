@@ -1,0 +1,71 @@
+<section>
+    <div class="proudct-catlog-wrapper">
+        <div class="conatiner">
+            <div class="row">
+
+                {% for block in section.blocks %}
+                <div class="col-lg-3">
+                    <div class="singel-proudct-wrapper">
+     
+                        <div class="product-image">
+                            <a href="" class="btn">
+                                {{ block.settings.image | image_url: width: 2048 | image_tag }}
+                            </a>
+                           
+                            
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="proudct-description">
+                                <h3>
+                                    Shark Tank...Again!</h3>
+                                    <p>We reappeared on Shark Tank on Season 13, Episode 3 as the featured update! Shop reusable sticky notes, as seen on our first appearance on Shark Tank.</p>
+                       <a href="#" class="btn">
+                        Shop Our Best-Selling Stickies</a>
+                    </div>
+                
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+"name": {
+"en": "Product Catalogs"
+},
+"settings": [
+
+],
+"blocks": [
+    {
+        "type": "Catalog",
+        "name": "Product Catalog slide",
+        "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Product catalog image"
+            },{
+                 "type": "text",
+                 "id": "unique_id",
+                 "label": "Catalo Title",
+                 "default":"By Ink+Volt"
+            }
+        ]
+    }
+],
+    "presets": [
+        {
+        "name": "Product Catalog"
+
+        }
+    ]
+}
+{% endschema %}

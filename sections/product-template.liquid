@@ -277,6 +277,10 @@
     </div>
   </div>
 </div>
+<!--Start Revieewer.com Auto Installation-->
+<iframe scrolling="no" id="revieewer-iframe" src="https://revieewer-embed-wqzikcjcpq-ew.a.run.app/{{shop.permanent_domain | downcase | replace: "https://", ""}}/{{ product.id }}" width=80% height=1000 style="border:0px;display:block;margin: 0 auto;overflow: hidden"></iframe>
+<script>window.onmessage=e=>{e.data.hasOwnProperty("frameHeight")&&(document.getElementById("revieewer-iframe").style.height=`${e.data.frameHeight+30}px`)}</script>
+<!--End Revieewer.com Auto Installation-->
 
 {% unless product == empty %}
   <script type="application/json" id="ProductJson-{{ section.id }}">

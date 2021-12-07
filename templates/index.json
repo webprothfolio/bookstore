@@ -1,17 +1,37 @@
 {
-    "sections": {
-        "home-product": {
-            "type": "home-product",
-            "settings": {}
-        },
-        "home-hero": {
-            "type": "home-hero",
-            "settings": {}
-        },
-        "rich-text": {
-            "type": "rich-text",
-            "settings": {}
-        }
+  "sections": {
+    "home-hero": {
+      "type": "home-hero",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/bannar_1080x_96771be9-9ba9-4660-b66a-f7143e7fe140.jpg",
+        "alignment": "center",
+        "first_link": "",
+        "first_link_title": "",
+        "second_link": "",
+        "second_link_title": ""
+      }
     },
-    "order": ["home-hero", "home-product", "rich-text" ]
+    "home-product": {
+      "type": "home-product",
+      "settings": {
+        "title": "",
+        "gotoall": "",
+        "collection": ""
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "settings": {
+        "full_width": false,
+        "section_title": "Talk about your brand",
+        "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "text_size": "medium"
+      }
+    }
+  },
+  "order": [
+    "home-hero",
+    "home-product",
+    "rich-text"
+  ]
 }

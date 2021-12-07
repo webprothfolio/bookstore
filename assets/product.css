@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;400&family=Lato:ital,wght@1,400;1,700&family=Readex+Pro:wght@200&display=swap");
+.product-view-all a {
+  font-size: 15px;
+  font-family: "Readex Pro", sans-serif;
+  font-weight: 200;
+  display: inline-block;
+}
+
+.section-title {
+  padding: 50px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.product-view-all {
+  padding: 50px 0;
+}
+
+.singel-product-wrapper h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}

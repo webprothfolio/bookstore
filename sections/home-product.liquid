@@ -1,3 +1,5 @@
+
+{{ 'product.css' | asset_url | stylesheet_tag }}
 {% assign on_sale = false %}
 {% if product.compare_at_price > product.price %}
 {% assign on_sale = true %}
@@ -11,12 +13,17 @@
         <div class="section-title">
            {{ section.settings.title }}
         </div>
-        <div class="col-md-6">
+    </div>
+        <div class="col-md-6 text-right">
             <div class="product-view-all">
-                <a href="{{ section.settings.gotoall }}" class="btn">View all</a>
+                <a href="{{ section.settings.gotoall }}" class="">View all</a>
+                <span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12H19" stroke="#0A162B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12 5L19 12L12 19" stroke="#0A162B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></span>
             </div>
         </div>
-    </div>
+   
 
 </div>
 

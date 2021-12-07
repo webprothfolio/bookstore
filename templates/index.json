@@ -20,10 +20,18 @@
             "image": "shopify:\/\/shop_images\/156469670_desktop2x.jpg",
             "unique_id": "By Ink+Volt"
           }
+        },
+        "5e67cbac-4c93-47b3-a873-31b0493150aa": {
+          "type": "Catalog",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1757813030_cat3_img2x_540x_45780a4f-fad9-4637-bf98-560c0c2786ab.jpg",
+            "unique_id": "By Ink+Volt"
+          }
         }
       },
       "block_order": [
-        "c11b916d-7b92-4ee3-82b8-b25ab05db26a"
+        "c11b916d-7b92-4ee3-82b8-b25ab05db26a",
+        "5e67cbac-4c93-47b3-a873-31b0493150aa"
       ],
       "settings": {
         "section-title": "TAKE YOUR NEXT STEP",

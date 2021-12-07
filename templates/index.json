@@ -13,7 +13,37 @@
     },
     "home-product-catalog": {
       "type": "home-product-catalog",
+      "blocks": {
+        "5e67cbac-4c93-47b3-a873-31b0493150aa": {
+          "type": "Catalog",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/iv-collectioncover-stationary_500x_aa9a6026-1393-4ba7-8906-961a49743118.jpg",
+            "unique_id": "By Ink+Volt"
+          }
+        },
+        "c11b916d-7b92-4ee3-82b8-b25ab05db26a": {
+          "type": "Catalog",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Notepads_500x_0c5993e9-eed2-4772-84f2-276e4112d8bc.jpg",
+            "unique_id": "By Ink+Volt"
+          }
+        },
+        "3221d84f-45f4-4bfb-abf2-a4d745172676": {
+          "type": "Catalog",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/iv-collectioncover-stationary_500x_aa9a6026-1393-4ba7-8906-961a49743118.jpg",
+            "unique_id": "By Ink+Volt"
+          }
+        }
+      },
+      "block_order": [
+        "5e67cbac-4c93-47b3-a873-31b0493150aa",
+        "c11b916d-7b92-4ee3-82b8-b25ab05db26a",
+        "3221d84f-45f4-4bfb-abf2-a4d745172676"
+      ],
       "settings": {
+        "section-title": "TAKE YOUR NEXT STEP",
+        "section-paragrap": "Being successful isn't about being perfect. It's about having the right tools. And, no matter what your goals, if you like to use pen and paper, then we have you covered."
       }
     },
     "home-product": {
@@ -24,42 +54,14 @@
         "collection": "frontpage"
       }
     },
-    "16388910016166e0a9": {
-      "type": "custom-content",
-      "blocks": {
-        "16388910019b10dfe8-0": {
-          "type": "text",
-          "settings": {
-            "title": "Talk about your brand",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "width": "50%",
-            "alignment": "center",
-            "align_text": "left"
-          }
-        },
-        "16388910019b10dfe8-1": {
-          "type": "image",
-          "settings": {
-            "width": "50%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "16388910019b10dfe8-0",
-        "16388910019b10dfe8-1"
-      ],
-      "settings": {
-        "title": "Custom content"
-      }
-    },
     "1638891040014f84e1": {
       "type": "side-bar",
+      "disabled": true,
       "settings": {
         "sidebar-logo": "shopify:\/\/shop_images\/WhatsApp_Image_2021-11-16_at_11.38.40_PM.jpg",
         "side_bar_login_link": "",
         "side_bar_create_account_link": "",
-        "main-menu": ""
+        "main-menu": "main-menu"
       }
     }
   },
@@ -67,7 +69,6 @@
     "home-hero",
     "home-product-catalog",
     "home-product",
-    "16388910016166e0a9",
     "1638891040014f84e1"
   ]
 }

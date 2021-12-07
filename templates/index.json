@@ -4,7 +4,7 @@
       "type": "home-hero",
       "settings": {
         "image": "shopify:\/\/shop_images\/bannar_1080x_96771be9-9ba9-4660-b66a-f7143e7fe140.jpg",
-        "alignment": "center",
+        "alignment": "bottom",
         "first_link": "",
         "first_link_title": "",
         "second_link": "",
@@ -14,9 +14,9 @@
     "home-product": {
       "type": "home-product",
       "settings": {
-        "title": "",
-        "gotoall": "",
-        "collection": ""
+        "title": "Featured Product",
+        "gotoall": "shopify:\/\/products\/cursive-handwriting-book",
+        "collection": "frontpage"
       }
     },
     "rich-text": {

@@ -1,0 +1,17 @@
+{
+    "sections": {
+        "home-product": {
+            "type": "home-product",
+            "settings": {}
+        },
+        "home-hero": {
+            "type": "home-hero",
+            "settings": {}
+        },
+        "rich-text": {
+            "type": "rich-text",
+            "settings": {}
+        }
+    },
+    "order": ["home-hero", "home-product", "rich-text" ]
+}

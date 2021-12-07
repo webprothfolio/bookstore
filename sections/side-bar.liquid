@@ -1,0 +1,65 @@
+
+{{ 'side-bar.css' | asset_url | stylesheet_tag }}
+
+
+<div class="sidebarwrapper text-center d-none d-lg-block">
+
+    <div class="side__bar__logo">
+        <img src="{{  section.settings.sidebar-logo  | img_url: ''  }}" loading="eager" alt="">
+    </div>
+
+    <div class="sidebar-acccount">
+        <ul>
+            <li><a href="{{section.settings.side_bar_login_link}}">Login</a></li>
+            <li><a href="{{section.settings.side_bar_create_account_link}}">Create account</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-main-menu">
+        <ul>
+            {% for link in linklists.main-menu.links %}
+              <li><a href= "{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+            </ul>
+    
+    </div>
+    .
+  </div>
+ 
+
+{% schema %}
+{
+    "name": "Taukie",
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "sidebar-logo",
+          "label": "Logo image",
+          "info": "Description"
+        },
+        {
+          "type": "url",
+          "id": "side_bar_login_link",
+          "label": "side_bar_login_link",
+          "info": "side_bar_login_link"
+        },
+        {
+          "type": "url",
+          "id": "side_bar_create_account_link",
+          "label": "side_bar_create_account_link",
+          "info": "side_bar_create_account_link"
+        },
+        {
+          "type": "link_list",
+          "id": "main-menu",
+          "label": "Main navigation"
+        }
+    ],
+    "presets": [
+    {
+        "name": "Carousel",
+        "category": "Carousel"
+    }
+  ]
+}
+{% endschema %}
+

@@ -1,0 +1,81 @@
+{{ 'hero.css' | asset_url | stylesheet_tag }}
+
+<section>
+<div class="header_wrapper d-flex align-items-center"  {% if section.settings.image %}{% unless section.settings.image.alt == blank %} role="img" aria-label="{{ section.settings.image.alt | escape }}"{% endunless %} style="background-image: url('{{ section.settings.image | img_url: '2048x' }}');  "{% endif %} >
+    <div class="container">
+        <div class="row">
+        <div class="col-12 d-flex justify-content-end">
+            <div class="singel-hero-wrapper text-center"  >
+            
+            <h2>planners for 2022</h2>
+            <p>Family-Owned. Planners Made In The USA ♥️</p>
+            <div class="here-btn">
+                <a href="{{ section.settings.first_link }}" class="btn margin-right">All-In-One Planner {{ section.settings.first_link_title }}</a>
+                <a href="{{ section.settings.second_link }}" class="btn">Find best one Planner {{ section.settings.second_link_title }}</a>
+            </div>
+            
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+</section>
+{% schema %}
+    {
+        "name": "Home Hero",
+        "class": "header_wrapper",
+        "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Bannar Image"
+        }, 
+         {
+            "type": "select",
+            "id": "alignment",
+            "label":"Select alignment",
+            "default": "center",
+            "options": [
+              {
+                "value": "top",
+                "label":"Top"
+              },
+              {
+                "value": "center",
+                "label":"Center"
+              },
+              {
+                "value": "bottom",
+                "label":"bottom"
+            
+              }
+            ]
+          },
+          {
+            "type": "url",
+            "id": "first_link",
+            "label": "first_button_link"
+          },
+          {
+               "type": "text",
+               "id": "first_link_title",
+               "label": "Select Your First button link"
+          },
+          {
+            "type": "url",
+            "id": "second_link",
+            "label": "second_button_link"
+          },
+          {
+               "type": "text",
+               "id": "second_link_title",
+               "label": "Select Your Second button link"
+          }
+        ]
+    }
+{% endschema %}
+
+{% stylesheet %}
+    
+{% endstylesheet %}

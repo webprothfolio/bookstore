@@ -1,0 +1,130 @@
+{% assign on_sale = false %}
+{% if product.compare_at_price > product.price %}
+{% assign on_sale = true %}
+{% endif %}
+
+
+<div class="conatiner">
+<div class="row">
+
+    <div class="col-md-6">
+        <div class="section-title">
+           {{ section.settings.title }}
+        </div>
+        <div class="col-md-6">
+            <div class="product-view-all">
+                <a href="{{ section.settings.gotoall }}" class="btn">View all</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">       
+     {% assign test = collections[section.settings.collection] %}
+
+{% for product in test.products %}
+    <div class="col-md-3">
+        <div class="singel-product-wrapper">
+            <div class="product-image-erapper">
+                {{ product | image_url: width: 300  | img_tag }}
+
+               
+            </div>
+
+            <a href="{{product.url}}">
+                <h4 class="product-title">
+{{product.title}}
+                </h4>
+            </a>
+            <p class="proudct-review">
+
+
+            </p>
+
+            <div class="pro_price_add">
+                {% assign sold_out = true %}
+                {% if product.available %}
+                  {% assign sold_out = false %}
+                {% endif %}
+                {% if sold_out %}
+                Sold out
+                {% else%}
+                <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm" class="form-vertical">
+
+
+                <select name="id" id="productSelect" class="product-single__variants d-none" >
+                    {% for variant in product.variants %}
+                    {% if variant.available %}
+
+
+                        <option {% if variant == product.selected_or_first_available_variant %} selected="selected" {% endif %} data-sku="{{ variant.sku }}" value="{{ variant.id }}">{{ variant.title }} - {{ variant.price | money_with_currency }}</option>
+
+                    {% else %}
+                        <option disabled="disabled">
+                        {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+                        </option>
+                    {% endif %}
+                    {% endfor %}
+                </select>
+                <div class="cart-plus-minus product-counter d-none">
+                  
+                <input type="number" name="quantity"   value="1" min="1" >
+                   
+                </div>
+
+                <button type="submit" name="add" id="AddToCart" class="btn d-block">
+                    <span id="AddToCartText">Add to cart</span>
+                  </button>
+                </form>
+                {% endif %}
+
+
+              
+    
+            </div>
+        </div>
+
+    </div>
+    {% endfor %}
+
+</div>
+</div>
+{% schema %}
+{
+    "name": {
+        "en": "Featured Product"
+    },
+    "settings": [
+        {
+             "type": "text",
+             "id": "title",
+             "label": "Product Section Title",
+             "info": "Info"
+        },
+        {
+          "type": "url",
+          "id": "gotoall",
+          "label": "All product link",
+          "info": "gotoall"
+        },
+{
+    "type": "collection",
+    "id": "collection",
+    "label": "Please Select your Collection"
+}
+    ],
+    "presets": [
+    {
+        "name": "Featured Proudct ",
+        "category": "Product"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+    #AddToCart{
+        width:100%;
+    }
+{% endstylesheet %}

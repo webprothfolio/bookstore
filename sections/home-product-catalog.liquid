@@ -1,0 +1,109 @@
+{{ 'catalog__wrapper.css' | asset_url | stylesheet_tag }}
+
+<div class="catalog__wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <div class="section-title">
+                <h3>{{ section.settings.section-title }}</h3>
+                <p>{{ section.settings.section-paragrap }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-md-fluid container">
+        <div class="row">
+            {% for block in section.blocks %}
+                <div class="col-md-4">
+        
+                    {% if block.type == 'Catalog' %}
+                        <div class="item text-center">
+                            <h4> {{ block.settings.unique_id }}</h4>
+                            {{ block.settings.image | image_url: width: 2048 | image_tag }}
+                        </div>
+    
+                        {% elsif block.type == 'headline' %}
+                        <div class="item text-center">
+                            <h4> {{ block.settings.unique_id_text }}</h4>
+                            <a href="{{block.settings.unique_id_link }}" class="btn">{{ block.settings.unique_id_button}}</a>
+                        </div>
+                    {% endif %}
+
+
+                    </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+</div>
+
+
+{% schema %}
+{
+    "name": {
+        "en": "catalog"
+    },
+    "settings": [
+        {
+             "type": "text",
+             "id": "section-title",
+             "label": "Section Title",
+             "default": "TAKE YOUR NEXT STEP"
+        },
+        {
+             "type": "text",
+             "id": "section-paragrap",
+             "label": "Section subtile",
+             "default": "Being successful isn't about being perfect. It's about having the right tools. And, no matter what your goals, if you like to use pen and paper, then we have you covered."
+        }
+    ],
+    "blocks": [
+        {
+            "type": "Catalog",
+            "name": "Product Catalog slide",
+            "settings": [
+                {
+                  "type": "image_picker",
+                  "id": "image",
+                  "label": "Product catalog image"
+                },{
+                     "type": "text",
+                     "id": "unique_id",
+                     "label": "Catalo Title",
+                     "default":"By Ink+Volt"
+                }
+            ]
+        },{
+            "type":"headline",
+            "name": "Product Catalog Text",
+            "settings": [
+                    {
+                     "type": "text",
+                     "id": "unique_id_text",
+                     "label": "Catalo Title",
+                     "default":"Don't see what you're looking for?"
+                },
+                {
+                  "type": "url",
+                  "id": "unique_id_link",
+                  "label": "unique_Button_link"
+                },
+                {
+                     "type": "text",
+                     "id": "unique_id_button",
+                     "label": "Button Name",
+                     "default":"Shop All"
+                }
+            ]
+        }
+    ],
+    
+    "presets": [
+    {
+        "name": "Product catalog",
+        "category": "Product catalog"
+    }
+  ]
+}
+{% endschema %}

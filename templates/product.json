@@ -1,0 +1,1 @@
+{"wrapper":"div#div_id.div_class[attribute-one=value]","sections":{"product-template":{"type":"product-template","settings":{}},"product-recommendations":{"type":"product-recommendations","settings":{}}},"order":["product-template","product-recommendations"]}

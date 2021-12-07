@@ -1,0 +1,47 @@
+.header_wrapper {
+  height: 550px;
+  background-size: contain;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .header_wrapper {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .header_wrapper {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 767px) {
+  .header_wrapper {
+    height: 350px;
+    background-size: cover;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-position: center right;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header_wrapper {
+    height: 400px;
+    background-size: cover;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    background-position: center right;
+  }
+}
+.header_wrapper h2 {
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+.header_wrapper a.btn {
+  border-radius: 27px;
+  margin-bottom: 12px;
+}
+.header_wrapper .margin-right {
+  margin-right: 10px;
+}

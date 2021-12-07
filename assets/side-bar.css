@@ -1,0 +1,50 @@
+.sidebarwrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-y: scroll;
+  z-index: 100;
+  width: 320px;
+  height: 100%;
+  transition: 0.4s all ease-in-out;
+  padding: 100px 0;
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .sidebarwrapper {
+    width: 220px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .sidebarwrapper {
+    width: 264px;
+  }
+}
+.sidebarwrapper .side__bar__logo {
+  margin: 0 20px 10px;
+}
+.sidebarwrapper .sidebar-main-menu {
+  margin: 80px 0;
+}
+.sidebarwrapper .sidebar-main-menu ul li a {
+  font-size: 20px;
+  margin: 7px 0;
+  display: inline-block;
+}
+.sidebarwrapper .sidebar-acccount ul li a {
+  font-size: 22px;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .site-header {
+    padding: 0 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .site-nav a {
+    padding: 3px 7px;
+  }
+}

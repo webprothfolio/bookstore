@@ -13,7 +13,21 @@
     },
     "home-product-catalog": {
       "type": "home-product-catalog",
+      "blocks": {
+        "c11b916d-7b92-4ee3-82b8-b25ab05db26a": {
+          "type": "Catalog",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/156469670_desktop2x.jpg",
+            "unique_id": "By Ink+Volt"
+          }
+        }
+      },
+      "block_order": [
+        "c11b916d-7b92-4ee3-82b8-b25ab05db26a"
+      ],
       "settings": {
+        "section-title": "TAKE YOUR NEXT STEP",
+        "section-paragrap": "Being successful isn't about being perfect. It's about having the right tools. And, no matter what your goals, if you like to use pen and paper, then we have you covered."
       }
     },
     "home-product": {

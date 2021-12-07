@@ -34,12 +34,19 @@
             "image": "shopify:\/\/shop_images\/Notepads_500x_0c5993e9-eed2-4772-84f2-276e4112d8bc.jpg",
             "unique_id": "By Ink+Volt"
           }
+        },
+        "3221d84f-45f4-4bfb-abf2-a4d745172676": {
+          "type": "Catalog",
+          "settings": {
+            "unique_id": "By Ink+Volt"
+          }
         }
       },
       "block_order": [
         "c11b916d-7b92-4ee3-82b8-b25ab05db26a",
         "5e67cbac-4c93-47b3-a873-31b0493150aa",
-        "0f99ad1f-5317-4b7d-a51c-cfb47ac5f0ec"
+        "0f99ad1f-5317-4b7d-a51c-cfb47ac5f0ec",
+        "3221d84f-45f4-4bfb-abf2-a4d745172676"
       ],
       "settings": {
         "section-title": "TAKE YOUR NEXT STEP",

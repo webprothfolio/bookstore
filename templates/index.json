@@ -11,6 +11,11 @@
         "second_link_title": ""
       }
     },
+    "home-product-catalog": {
+      "type": "home-product-catalog",
+      "settings": {
+      }
+    },
     "home-product": {
       "type": "home-product",
       "settings": {
@@ -31,6 +36,7 @@
   },
   "order": [
     "home-hero",
+    "home-product-catalog",
     "home-product",
     "rich-text"
   ]

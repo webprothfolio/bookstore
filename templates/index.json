@@ -54,42 +54,14 @@
         "collection": "frontpage"
       }
     },
-    "16388910016166e0a9": {
-      "type": "custom-content",
-      "blocks": {
-        "16388910019b10dfe8-0": {
-          "type": "text",
-          "settings": {
-            "title": "Talk about your brand",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "width": "50%",
-            "alignment": "center",
-            "align_text": "left"
-          }
-        },
-        "16388910019b10dfe8-1": {
-          "type": "image",
-          "settings": {
-            "width": "50%",
-            "alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "16388910019b10dfe8-0",
-        "16388910019b10dfe8-1"
-      ],
-      "settings": {
-        "title": "Custom content"
-      }
-    },
     "1638891040014f84e1": {
       "type": "side-bar",
+      "disabled": true,
       "settings": {
         "sidebar-logo": "shopify:\/\/shop_images\/WhatsApp_Image_2021-11-16_at_11.38.40_PM.jpg",
         "side_bar_login_link": "",
         "side_bar_create_account_link": "",
-        "main-menu": ""
+        "main-menu": "main-menu"
       }
     }
   },
@@ -97,7 +69,6 @@
     "home-hero",
     "home-product-catalog",
     "home-product",
-    "16388910016166e0a9",
     "1638891040014f84e1"
   ]
 }

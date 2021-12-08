@@ -19,6 +19,13 @@
 .section-title h3 {
   font-size: 40px;
   margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+.section-title p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 #AddToCartText {

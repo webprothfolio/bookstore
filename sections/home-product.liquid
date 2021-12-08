@@ -30,7 +30,7 @@
 <div class="row">       
      {% assign test = collections[section.settings.collection] %}
 
-{% for product in test.products %}
+{% for product in test.products limit:section.settings.product-count %}
     <div class="col-md-3">
         <div class="singel-product-wrapper text-center">
             <div class="product-image-erapper">
@@ -122,6 +122,14 @@
     "type": "collection",
     "id": "collection",
     "label": "Please Select your Collection"
+},{
+  "type": "range",
+  "id": "product-count",
+  "label": "Product Count",
+  "min": 4,
+  "max": 12,
+  "step": 1,
+  "default": 4
 }
     ],
     "presets": [
